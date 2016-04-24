@@ -17,5 +17,10 @@ namespace XPlatformMenus.Core.ViewModels
 	    {
 	        get { return new MvxCommand(() => ShowViewModel<InfoViewModel>());}
 	    }
+
+		public MvxCommand ShowPagerCommand
+		{
+			get { return new MvxCommand (() => ShowViewModel<ExampleViewPagerViewModel> ()); }
+		}
     }
 }
